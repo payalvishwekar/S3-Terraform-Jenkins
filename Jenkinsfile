@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        AWS_ACCESS_KEY_ID = credentials('aws-credentials-id') // Replace with your credentials ID
-        AWS_SECRET_ACCESS_KEY = credentials('aws-credentials-id') // Replace with your credentials ID
+        AWS_ACCESS_KEY_ID = credentials('AWS_Creds') // Replace with your credentials ID
+        AWS_SECRET_ACCESS_KEY = credentials('AWS_Creds') // Replace with your credentials ID
         // TF_VAR_region = 'us-west-2' // Replace with your desired region
         // AWS_DEFAULT_REGION = 'us-east-1'
     }
