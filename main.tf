@@ -140,7 +140,7 @@ resource "aws_s3_bucket_logging" "example" {
 
 #8 Object locking
 #This means that once an object is uploaded to the bucket, it cannot be deleted or overwritten for at least 1 day
-resource "aws_s3_bucket_object_lock_configuration" "example" {
+/*resource "aws_s3_bucket_object_lock_configuration" "example" {
   bucket = aws_s3_bucket.demo_bucket.id
 
   rule {
@@ -149,4 +149,4 @@ resource "aws_s3_bucket_object_lock_configuration" "example" {
       days = 1
     }
   }
-}
+} */
